@@ -1,0 +1,108 @@
+#main{
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+/*分类栏样式*/
+#nav{
+    width: 100%;
+    height: 4.1rem;
+    background: #ffffff;
+    position: fixed;
+    top: 3.9rem;
+}
+#list{
+    width: 94.7%;
+    height: 4.1rem;
+    margin: 0 auto;
+}
+#list li{
+    line-height: 4.1rem;
+}
+#list li:nth-of-type(2){
+    position: absolute;
+    left: 39%;
+}
+#list li img{
+    width: 1rem;
+    margin: 1.7rem;
+    margin-left: 0.9rem;
+    margin-right:0.2rem;  
+}
+#list_menus{
+    width: 100%;
+    height: 10rem;
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    top: 3.9rem;
+}
+#list_menus ul{
+    width: 94.7%;
+    height: 50%;
+    margin: 0 auto;
+}
+#list_menus ul li{
+    width: 71px;
+    background: #f2f2f2;
+    border-radius: 0.4rem;
+    font: 1.3rem/2.7rem 'STHeitiSC';
+    text-align: center;
+    color: #333333 ;
+}
+#menus1 li{
+    margin-top: 1.35rem; 
+}
+#menus2 li{
+    margin-top: 0.8rem; 
+}
+#menus1 li:nth-of-type(2),#menus1 li:nth-of-type(3),#menus2 li:nth-of-type(2),#menus2 li:nth-of-type(3){
+    margin-left: 7%; 
+}
+.click list{
+    color: #f29004;
+}
+.click menus{
+    background: #f29004;
+    color: #ffffff;
+}
+
+
+/* 商品样式 */
+.main_product{
+    width: 49%;
+    background: #ffffff;
+    display: block;
+    margin-top: 0.8rem;
+}
+.main_product:last-child{
+    margin-bottom: 10rem;
+}
+.main_product img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.main_product span{
+    display: inline-block;
+    font:1rem/2.9rem 'HiraginoSansGB';
+    color: #666666;
+    margin-left: 0.7rem; 
+}
+.main_product span:first-of-type{
+    display: block;
+    font:700 1.4rem/1.8rem 'HiraginoSansGB';
+    color: #1a1a1a;
+}
+.main_product span:nth-of-type(2){
+    font:700 1.2rem/2.9rem 'HiraginoSansGB';
+    color: #de0000;
+}
+.main_product span:nth-of-type(3){
+    text-indent: 0.5rem;
+}
+.main_product span:last-of-type{
+    margin-left: 0; 
+    text-decoration: line-through;
+}
+
+

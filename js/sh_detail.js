@@ -1,0 +1,19 @@
+
+$(function(){
+    //用户评论
+    $('#btn_comment').on('click',function(){
+        $('#through').animate({
+            'left':'67.3%'
+            },400,'swing');
+        $('#product').css('display','none');
+        $('#comment').css('display','block');
+    });
+    //商品详情
+    $('#btn_product').on('click',function(){
+        $('#through').animate({
+            'left':'17.3%'
+            },400,'swing');
+        $('#product').css('display','block');
+        $('#comment').css('display','none');
+    });
+})

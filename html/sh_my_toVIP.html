@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>升级会员</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <style>
+        html,body{
+            background: #fff;
+        }
+        #main h3{
+            width: 100%;
+            margin: 0 auto;
+            background: #fff;
+            font: 1.4rem/2rem 'HiraginoSansGB';
+            color: #808080;
+        }
+        #main span{
+            font: 1.4rem/2rem 'HiraginoSansGB';
+            color: #808080;
+        }
+        #details_box h3{
+            padding-top: 1.8rem;
+        }
+        /*分割线*/
+        .line{
+            display: block;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2018;
+        }
+        .line::before{
+            content: '';
+            width: 35%;
+            border-top: 0.1rem solid #dbdbdb;
+            position: absolute;
+            top: 1rem;
+            left: 0;
+        }
+        .line::after{
+            content: '';
+            width: 35%;
+            border-top: 0.1rem solid #dbdbdb;
+            position: absolute;
+            top: 1rem;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my-vip.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2>升级会员</h2>
+        <a href="sh_my_toVIP_rechargeVIP.html" class="fl">
+            <span id="rightside">充值</span>
+        </a>
+    </header>
+    <section id="main" class="top">
+        <div id="details_box" class="box">
+            <h3>会员等级说明</h3>
+            <span id="details">会员等级说明文字</span>
+        </div>
+        <div id="vip_box" class="box">
+            <h3 class="line">vip会员</h3>
+            <span id="vip">
+                1.说明文字<br/>
+                2.说明文字<br/>
+                3.说明文字<br/>
+            </span>
+        </div>
+        <div id="partner_box" class="box">
+            <h3 class="line">股东会员</h3>
+            <span id="partner">
+                1.说明文字<br/>
+                2.说明文字<br/>
+                3.说明文字<br/>
+            </span>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一键客服</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_homepage_customerService.css">
+    <script src="../js/sh_login.js"></script>
+    <script>
+        window.onload = function(){
+            var aInp = document.getElementsByTagName('input');
+            var oTextarea = document.getElementById('details');
+
+            inputClean(aInp[0],"姓名：",'text');
+            inputClean(aInp[1],"联系方式：",'text');
+            inputClean(aInp[2],"输入商业合作/商品入驻/广告加盟等需求类型",'text');
+            textareaClean(oTextarea,"请根据需求类型，输入详细的合作模式（如：商 品入驻，请注明具体商品、数量等），平台会在 第一时间与您进行沟通联系。");
+        };
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_homepage.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2>一键客服</h2>
+    </header>
+    <section id="main" class="top">
+        <div class="customerService_box">
+            <div id="main_message">
+                <h3>联系信息：</h3>
+                <input id="name" type="text" value="姓名：">
+                <input id="phone" type="text" value="联系方式：">
+                <div class="line"></div>
+            </div>
+            <div id="main_type">
+                <h3>需求类型：</h3>
+                <input id="type" type="text" value="输入商业合作/商品入驻/广告加盟等需求类型">
+            </div>
+            <div id="main_details">
+                <h3>需求描述：</h3>
+                <textarea id="details">请根据需求类型，输入详细的合作模式（如：商 品入驻，请注明具体商品、数量等），平台会在 第一时间与您进行沟通联系。</textarea>
+            </div>
+            <div id="main_tips" class="clearfix">
+                <img class="fl" src="../img/homepage/customerservice/icon.png" alt="">
+                <span class="fl">需求提交后，平台会在第一时间与您联系。</span>
+            </div>
+            <input class="box" id="submit" type="button" value="提交">
+        </div>
+    </section>
+</body>
+</html>

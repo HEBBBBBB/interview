@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <title>联系方式</title>
+    <style>
+        input{
+            border-radius: 0.6rem;
+            font: 1.4rem/4.5rem 'HiraginoSansGB';
+            border: 0.1rem solid #dbdbdb;
+            color: #3a3a3a;
+            text-indent: 1em;
+        }
+        #phone{
+            margin-top: 6.1rem;
+            border-radius: 0.6rem 0.6rem 0 0;
+        }
+        #code_box{
+            position: relative;
+        }
+        #code{
+            margin-bottom: 3.6rem;
+            background: #fff;
+            border-top: none;
+            border-radius: 0 0 0.6rem 0.6rem;
+        }
+        #btn_code{
+            width: 10rem;
+            height: 3.5rem;
+            background: #26c08a;
+            font: 1.4rem/3.5rem 'HiraginoSansGB';
+            text-align: center;
+            text-indent: 0;
+            color: #fff;
+            position: absolute;
+            top: 0.5rem;
+            right: 1.4rem;
+        }
+        #btn1{
+            width: 85.3%;
+            display: block;
+            margin: 0 auto;
+            background: #f29004;
+            border: none;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 1em;
+        }
+    </style>
+    <script src="../js/sh_login.js"></script>
+    <script src="..\js\sh_register.js"></script>
+    <script>
+        window.onload = function(){
+            var aInp = document.getElementsByTagName('input');
+
+            inputClean(aInp[0],"手机号码",'text');
+            inputClean(aInp[1],"验证码",'text');
+            massage(aInp[2],60);
+        };
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my_information_phone.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2>联系方式</h2>
+    </header>
+    <section id="main">
+        <input id="phone" class="box" type="text" value="手机号码">
+        <div id="code_box">
+            <input id="code" class="box" type="text" value="验证码">
+            <input id="btn_code" type="button" value="获取验证码">
+        </div>
+        <input id="btn1" type="button" value="确定">
+    </section>
+</body>
+</html>

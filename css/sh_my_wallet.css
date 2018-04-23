@@ -1,0 +1,84 @@
+
+/*money*/
+#money_box img{
+    display: block;
+    width: 8.1rem;
+    margin: 9.9rem auto 2.1rem;
+}
+#money_box span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#money_box span:first-of-type{
+    margin-bottom: 1rem;
+    font: 1.4rem/1.4rem 'HiraginoSansGB';
+    color: #808080;
+}
+#money_box span:last-of-type{
+    margin-bottom: 6rem;
+    font:700 2.3rem/2.3rem 'HiraginoSansGB';
+    color: #0d0d0d;
+}
+/*payway*/
+#payway{
+    background: #fff;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.6rem;
+    margin-bottom: 5.4rem;
+}
+#payway ul li{
+    width: 95%;
+    margin: auto;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+#payway ul li:last-of-type{
+    border-bottom: none;
+}
+#payway ul li img{
+    width: 3rem;
+    margin: 0.9rem 1.4rem 0.9rem 1.2rem;
+}
+#payway ul li span{
+    font: 1.4rem/5rem 'HiraginoSansGB';
+}
+.btn_box{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 1.6rem 1.2rem;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 1.6rem;
+    background: #f2f2f2; 
+}
+.btn_round{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.6rem;
+    position: relative;
+}
+.btn_round:checked::before{
+    content: '';
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 1.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/选中商品.png') no-repeat #f2f2f2; 
+    background-size: cover;
+}
+/*充值按钮*/
+#btn1{
+    width: 85.3%;
+    display: block;
+    margin: auto;
+    background: #26c08a;
+    border: none;
+    border-radius: 0.6rem;
+    font: 1.5rem/4.5rem 'HiraginoSansGB';
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1em;
+    padding-left: 1em; 
+}

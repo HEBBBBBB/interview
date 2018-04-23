@@ -1,0 +1,80 @@
+
+#life_main{
+    width: 100%;
+}
+/*life_main_left 样式*/
+#life_main_left{
+    width: 28%;
+    height: 100%;
+    background: #f2f2f2;
+    position: absolute;
+    left: 0;
+}
+#life_main_left ul{
+    margin-top: 1rem;
+    font: 1.4rem/5rem 'HiraginoSansGB';
+    color: #171717;
+    text-align: center;
+}
+.click_li{
+    background: #e6e6e6;
+    color: #f29004;
+    /* border-left: 5.7% solid #f29004; */
+    position: relative;
+}
+.click_li::before{
+    content: '';
+    width: 0.6rem;
+    height: 100%;
+    background: #f29004;
+    position: absolute;
+    left: 0;
+}
+/*life_main_right 样式*/
+#life_main_right{
+    width: 72%;
+    height: auto;
+    background: #fff;
+    position: absolute;
+    right: 0;  
+}
+.life_main_box{
+    width: 92.5%;
+    margin: 0 auto;
+}
+.life_message{
+    border-bottom: 0.2rem solid #d9d5d5;
+    position: relative;
+}
+.life_message .pic{
+    width: 36%;
+    border:0.1rem solid #cccccc;
+    margin: 1rem 1rem 1rem 0;
+}
+.life_message .message{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.life_message .message img{
+    width: 1.5rem;
+    margin-right: 0.9rem;
+}
+.life_message .message span{
+    font: 1.2rem/1.6rem 'HiraginoSansGB';
+    color:#a6a4a4;
+    overflow: hidden;
+}
+.life_message .message span:first-child{
+    margin-bottom: 2.5rem;
+    display: block;
+    font: 1.4rem/1.8rem 'HiraginoSansGB';
+    color: #1b1b1b;
+    white-space: wrap;
+}
+.life_message .message span:nth-child(2){
+    margin-right: 0.8rem;
+    font:600 1.4rem 'HiraginoSansGB';
+    color: #df0101;
+}

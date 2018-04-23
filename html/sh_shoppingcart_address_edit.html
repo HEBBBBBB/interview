@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑地址</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_address_edit.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/sh_login.js"></script>
+    <script src="../js/sh_address_edit.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_shoppingcart_address.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">收货地址</h2>
+    </header>
+    <section id="section1">
+        <div class="underline">
+            <div id="use_name" class="box">
+                <span>收货人姓名</span>
+                <input class="fr" type="text">
+            </div>
+        </div>
+        <div class="underline">
+            <div id="use_cellphone" class="box">
+                <span>联系电话</span>
+                <input class="fr" type="text">
+            </div>
+        </div>
+        <div class="underline clearfix">
+            <div id="use_address1" class="box">
+                <span class="fl">城市：</span>
+                <ul>
+                    <li>
+                        <span class="fl">选择</span>
+                        <span class="fl">省级</span>
+                        <img class="fl" src="../img/address_edit/down.png" alt="">
+                    </li>
+                    <li>
+                        <span class="fl">选择</span>
+                        <span class="fl">市级</span>
+                        <img class="fl" src="../img/address_edit/down.png" alt="">
+                    </li>
+                    <li>
+                        <span class="fl">选择</span>
+                        <span class="fl">区</span>
+                        <img class="fl" src="../img/address_edit/down.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="underline">
+            <div id="use_address2" class="box">
+                <input type="text" value="小区、街道、门牌等详细信息">
+            </div>
+        </div>
+        <div class="underline">
+            <div id="use_address3" class="box">
+                <span>设为默认地址</span>
+                <input id="default_address" type="checkbox" class="sliding_button fr">
+            </div>
+        </div>
+    </section>
+    <section id="address_classification" class="opacity">
+        <div id="address_classification_main">
+            <div id="main_header">
+                <div class="box">
+                    <a class="fl" href="javascript:;">取消</a>
+                    <a class="fr" href="javascript:;">确定</a>
+                </div>
+            </div>
+            <div id="main_choice">
+                <div class="box">
+                    <ul class="fl">
+                        <li>广东</li>
+                    </ul>
+                    <span class="fl">省</span>
+                    <ul class="fl">
+                        <li>广州</li>
+                        <li>深圳</li>
+                        <li>惠州</li>
+                        <li>珠海</li>
+                        <li>潮州</li>
+                    </ul>
+                    <span class="fl">市</span>
+                    <ul class="fl">
+                        <li>天河</li>
+                        <li>黄埔</li>
+                        <li>海珠</li>
+                        <li>越秀</li>
+                        <li>荔湾</li>
+                    </ul>
+                    <span class="fl">区</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <input type="button" value="确定">
+    </footer>
+</body>
+</html>

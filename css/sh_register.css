@@ -1,0 +1,47 @@
+#main{
+    width: 100%;
+}
+#main_box{
+    width: 85.3%;
+    margin: 7.15rem auto;
+    position: relative;
+}
+.login_text{
+    width: 100%;
+    margin-bottom: 1rem; 
+    text-indent: 1em;
+}
+.login_text:nth-of-type(2){
+    width: 66.25%;
+}
+.login_text:nth-of-type(3){
+    width: 29.375%;
+    background: #ea6c6c;
+    border:0.1rem solid #ea6c6c;
+    color: #ffffff; 
+    text-indent: 0;
+}
+.login_text:nth-of-type(4){
+    border-bottom: none;
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#line{
+    width: 94.5%;
+    height: 1px;
+    background-color: #dcdcdc;;
+    position: absolute;
+    left: 2.75%;
+    bottom: 19.6rem;
+    z-index: 10;
+}
+.login_text:nth-of-type(5){
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.login_text:last-of-type{
+    margin-top: 10.7rem; 
+    text-indent: 0;
+}

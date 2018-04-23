@@ -1,0 +1,131 @@
+html,body{
+    background: #ffffff;
+}
+
+/* 购物车主体 */
+#product_list{
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+/* 动态添加商品样式 */
+.product_list{
+    width: 94.7%;
+    margin: 0 auto;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+}
+.btn_round{
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #f2f2f2 url();
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 1.5rem;
+}
+.btn_round_click{
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('../img/选中商品.png') no-repeat;
+    background-size: cover;
+    /* border: 0.1rem solid #c9c9c9; */
+    border-radius: 1.5rem;
+}
+.product_list div:first-child{
+    margin-top: 3.7rem;
+    margin-right: 0.6rem;
+}
+.product_pic{
+    width: 6.9rem;
+    height: 6.9rem;
+    border: 1px solid #e6e6e6;
+    margin: 1.2rem 0.8rem 1.2rem 0.2rem;
+    background: url('../img/shoppingcart/商品小图.jpg') no-repeat;
+    background-size: cover; 
+}
+.name{
+    display: block;
+    margin-top: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 1.4rem 'HiraginoSansGB';
+    color: #1a1a1a;
+}
+.type{
+    display: block;
+    margin-top: 1rem;
+    font: 1.2rem 'HiraginoSansGB';
+    color: #757575;
+}
+.money{
+    display: block;
+    margin-top: 1.2rem;
+    font: 700 1.1rem 'HiraginoSansGB';
+    color: #de0000;
+}
+.amount{
+    font: 1.2rem 'HiraginoSansGB';
+    color: #404040;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+}
+
+
+
+/* section3 结算部分 */
+#section3{
+    width: 100%;
+    position: fixed;
+    bottom: 4.9rem;
+    background: #f2f2f2;
+    border-top:2px solid #ebebeb ;
+    border-bottom:2px solid #ebebeb ;
+}
+#sum_ls{
+    margin-top: 1.8rem;
+    margin-right: 7%;
+}
+#btn_all{
+    margin-right: 0.9rem; 
+}
+#sum_ms{
+    margin-top: 1.3rem;
+}
+#sum_ms span:first-of-type{
+    font: 1.4rem 'HiraginoSansGB';
+    color: #343434;
+}
+#sum_ms span:nth-of-type(2){
+    font: 1.2rem 'HiraginoSansGB';
+    color: #ed601b;
+}
+#sum_ms span:last-of-type{
+    font: 1.1rem 'HiraginoSansGB';
+    color: #737373;
+}
+#sum_rs{
+    display: block;
+    width: 35.8%;
+    margin: 1rem 0;
+}
+#sum_rs_btn{
+    width: 100%;
+    background: #ee4147;
+    border: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    font: 700 1.6rem/3.5rem 'HiraginoSansGB';
+    color: #ffffff;
+}
+#sum_rs_cancel{
+    display: block;
+    width: 35.8%;
+    margin: 1rem 0;
+    background: #ee4147;
+    border: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    font: 700 1.6rem/3.5rem 'HiraginoSansGB';
+    color: #ffffff;
+}

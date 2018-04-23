@@ -1,0 +1,82 @@
+/*section5支付密码*/
+#section5{
+    display: none;
+}
+#pw_box{
+    width: 88%;
+    height: 24rem;
+    background: #fff;
+    border-radius: 0.6rem; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin: auto;
+}
+.pw_box{
+    width: 92.4%;
+    margin: 0 auto;
+}
+h4{
+    font: 1.5rem/4.2rem 'HiraginoSansGB';
+    border-bottom: 0.1rem solid #dbdbdb;
+    text-align: center;
+    color: #000;
+}
+#pw_money{
+    display: block;
+    width: 100%;
+    font: 600 2rem/7.5rem 'HiraginoSansGB';
+    text-align: center;
+    color: #000;
+}
+#pw_list{
+    position: relative;
+}
+#pw_list ul{
+    width: 100%;
+    background: #f2f2f2;
+    border: 0.1rem solid #bfbfbf;
+    border-radius: 0.8rem;
+}
+#pw_list ul li{
+    width: 16.3%;
+    height: 4.5rem;
+    border-right: 1px solid #bfbfbf;
+    font: 700 3.5rem/4.5rem 'HiraginoSansGB';
+    text-align: center;
+}
+#pw_list ul li:last-of-type{
+    border-right: none;
+}
+#pw{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);  
+}
+#btn_box{
+    margin: 2.3rem 0 1.5rem;
+}
+#btn_box input[type="button"]{
+    width: 40%;
+    font: 1.5rem/3.9rem 'HiraginoSansGB';
+    text-align: center;
+    border-radius: 0.8rem;
+}
+#cancel_btn{
+    background: #f2f2f2;
+    border: 0.1rem solid #c8c8c8;
+    color: #333333;
+}
+#pay_btn{
+    background: #f29004;
+    border: 0.1rem solid #dbdbdb;
+    color: #fff;
+}

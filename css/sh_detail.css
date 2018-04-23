@@ -1,0 +1,173 @@
+/*商品详情共用样式*/
+html,body{
+    width: 100%;
+    background: #f2f2f2;
+}
+.box{
+    width: 94.7%;
+    margin: 0 auto;
+}
+/*商品图片section1样式*/
+#section1{
+    background: #ffffff;
+    position: relative;
+}
+#pic{
+    width: 100%;
+}
+#pic::before{
+    content:'';
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 50px 100px -50px #cbcbcb inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#pic::after{
+    content:'';
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0px -30px 50px -20px #cbcbcb inset;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#pic img{
+    width: 100%;
+}
+#aside{
+    width: 100%;
+    height: 4.4rem;
+    position: absolute;
+    top: 0;
+}
+#aside img{
+    width: 2.5rem;
+    margin-top: 1rem;
+}
+#aside a:nth-of-type(3){
+    margin-right: 3rem;
+}
+
+
+/*价钱section2样式*/
+/*价钱公共样式*/
+#section2{
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+#section2 div{
+    width: 94.7%;
+    margin: 0 auto;
+}
+#section2 div span{
+    font: 1.2rem 'HiraginoSansGB';
+    color: #666666;
+}
+/*价钱详细样式*/
+/*商品名*/
+#section2 div:first-of-type span{
+    font: 600 1.5rem/4.4rem 'HiraginoSansGB';
+    color: #141414;
+}
+/*现价原价*/
+#section2 div:nth-of-type(2){
+    height: 2.9rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+#section2 div:nth-of-type(2) span:nth-of-type(1){
+    font: 600 1.3rem 'HiraginoSansGB';
+    color: #ff3f12;
+    letter-spacing: 3px;
+}
+/*原价删除线*/
+#section2 div:nth-of-type(2) span:nth-of-type(3){
+    text-decoration: line-through;
+}
+/*限时限购*/
+#section2 div:last-of-type span{
+    line-height: 4.4rem;
+}
+
+/*商品详情&&用户评价section3*/
+#section3{
+    width: 100%;
+    background: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+}
+#btn{
+    width: 100%;
+    height: 3.9rem;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+    position: relative;
+}
+#btn_product,#btn_comment{
+    width: 50%;
+    font: 1.4rem/3.9rem 'HiraginoSansGB';
+    text-align: center;
+    color: #595959;
+}
+#through{
+    width: 5.8rem;
+    height: 0.5rem;
+    background: #ff3b0e;
+    position: absolute;
+    left: 17.3%;
+    bottom: -2px;
+}
+/*商品详情 product*/
+#product{
+    width: 94.7%;
+    margin: 0 auto;
+}
+#product img{
+    width: 100%;
+}
+/*用户评价 comment*/
+#comment{
+    display: none;
+}
+
+
+
+/*购买栏section4*/
+#section4{
+    width: 100%;
+    background: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+}
+#buy{
+    position: relative;
+}
+#buy a{
+    width: 30%;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+#buy img{
+    width: 2.9rem;
+    margin: 1.1rem 0;
+}
+#buy input[type="button"]{
+    display: block;
+    width: 100%;
+    border: none;
+    font: 700 1.4rem/3.25rem 'HiraginoSansGB';
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.4rem; 
+}
+#btn_join{
+    margin-right: 2.4rem;
+}
+#btn_join input{
+    background: #ed9d2a;
+}
+#btn_buy input{
+    background: #ee3749;
+}
+

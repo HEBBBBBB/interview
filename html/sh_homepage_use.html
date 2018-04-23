@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生活用品</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_homepage_use.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            var T = null;
+            var n = null;
+            var $l_li = $('#life_main_left').find('li');
+            $l_li.click(function(){
+
+                $l_li.each(function(i,elem){
+                    $l_li.eq(i).attr('class','');
+                });
+
+                $(this).attr('class','click_li');
+
+            });
+            
+            var oT = $('#life_main_left').css('top');
+
+            $('#life_main_right').on('touchmove',function(){
+
+                T = $('#life_main').offset().top - $(document).scrollTop();
+
+                n = $(document).scrollTop() + $('#header').height();
+                console.log(oT);
+                if( T <= $('#header').height() ){
+                    $('#life_main_left').css('position','fixed');
+                    $('#life_main_left').css('top','3.9rem');
+                }else{
+                    $('#life_main_left').css('position','absolute');
+                    $('#life_main_left').css('top',oT);
+                }
+                console.log( $('#life_main_left').css('top'));
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_homepage.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">生活用品</h2>
+    </header>
+    <section id="banner">
+        <div  id="banner_box">
+            <a href="javascript:;">
+                <img src="../img/homepage/banner1.jpg" alt="">
+            </a>
+        </div>
+        <ul id="banner_list" class="clearfix">
+            <li class="fl">
+                <a href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;"></a>
+            </li>
+        </ul>
+    </section>
+    <section id="life_main" class="clearfix">
+        <div id="life_main_left" class="fl">
+            <ul>
+                <li class="click_li">生活百货</li>
+                <li>收纳整理</li>
+                <li>餐饮卫具</li>
+                <li>杂志报纸</li>
+                <li>厨房用品</li>
+                <li>创意用品</li>
+            </ul>
+        </div>
+        <div id="life_main_right" class="fl">
+            <ul class="life_main_box">
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sh_classification_details.html">
+                        <div class="life_message">
+                            <img class="pic" src="../img/homepage/use/logo.jpg" alt="">
+                            <div class="message">
+                                <span>沃之沃 多功能收纳盒 内衣盒六件套</span>
+                                <span>￥11.5</span>
+                                <span>原价：</span>
+                                <span class="through">￥12.8</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

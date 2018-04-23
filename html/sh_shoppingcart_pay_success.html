@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付成功</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <style>
+        #tick{
+            width: 9.4rem;
+            margin: 9.5rem auto 2.8rem;
+        }
+        #text1{
+            width: 100%;
+            text-align: center;
+            font: 1.8rem 'HiraginoSansGB';
+            color: #333333;
+        }
+        #number{
+            width: 100%;
+            text-align: center;
+            font: 1.4rem/3.4rem 'HiraginoSansGB';
+            color: #737373;
+        }
+        #red_button{
+            display: block;
+            width: 12.8rem;
+            height: 3.5rem;
+            margin: 5rem auto;
+            background: #ee4147;
+            border: none;
+            border-radius: 0.3rem;
+            text-align: center;
+            font: 1.5rem/3.5rem 'HiraginoSansGB';
+            color: #fff;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_shoppingcart.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">支付成功</h2>
+    </header>
+    <section id="main">
+        <div class="box">
+            <img id="tick" src="../img/pay/pay_success.png" alt="">
+            <div id="text1">
+                <span>恭喜您已成功支付！</span>
+            </div>
+            <div id="number">
+                <span>订单编号：</span>
+                <span id="order_number">SHYJ2018041001</span>
+            </div>
+            <a href="sh_classification.html">
+                <input id="red_button" type="button" value="继续购物">
+            </a>
+        </div>
+    </section>
+</body>
+</html>

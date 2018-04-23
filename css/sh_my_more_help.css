@@ -1,0 +1,58 @@
+
+#main{
+    margin-top: 3.9rem;
+}
+#main ul li{
+    background: #fff;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+#main ul li span{
+    font: 1.4rem/4.4rem 'HiraginoSansGB';
+    color: #333333;
+}
+#main ul li img{
+    height: 1.4rem;
+    margin-top: 1.5rem;
+}
+/*#phone*/
+#phone{
+    width: 100%;
+}
+#phone img{
+    width: 4.3rem;
+    margin: 8.4rem auto 1rem;
+}
+#phone span{
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #808080;
+}
+#phone span:first-of-type{
+    font: 1.2rem/1.2rem 'HiraginoSansGB';
+}
+#phone span:last-of-type{
+    margin-top: 0.7rem;
+    margin-bottom: 1.7rem;
+    font:700 1.5rem 'HiraginoSansGB';
+}
+#call{
+    display: block;
+    width: 9rem;
+    padding-left: 2.8rem;
+    margin: 0 auto 6.5rem;
+    font:500 1.1rem/3rem 'HiraginoSansGB';
+    color: #fff;
+    background:url('../img/my/information/call.png') no-repeat #5fb9ff;
+    background-size: contain;
+    border: none;
+    border-radius: 0.4rem; 
+    letter-spacing: 3px;
+    text-align: left;
+}
+#title{
+    display: block;
+    font: 1.2rem/3rem 'HiraginoSansGB';
+    color: #808080;
+}

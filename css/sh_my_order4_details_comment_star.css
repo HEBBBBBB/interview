@@ -1,0 +1,36 @@
+
+html,body{
+    background: #fff;
+}
+#section2{
+    margin-top: 3.9rem;
+    border-bottom: none;
+}
+#bottom_btn{
+    position: absolute;
+    bottom: 6rem;
+    margin-bottom: 0;
+    margin-left: -45%;
+    left: 50%;
+}
+#comment_title{
+    font: 1.3rem/4rem 'HiraginoSansGB';
+    color: #333333;
+}
+#star{
+    margin-top: 1.2rem;
+}
+#star img{
+    margin-left: 0.6rem;
+    width: 1.6rem;
+}
+#comment{
+    width: 94%;
+    height: 9rem;
+    padding: 2.7%;
+    background: #f2f2f2;
+    border: 0.1rem solid #dbdbdb;
+    resize: none;
+    font: 1.3rem/2rem 'HiraginoSansGB';
+    color: #333333;
+}

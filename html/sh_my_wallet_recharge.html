@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_pay.css">
+    <title>充值</title>
+    <style>
+        #payway{
+            background: #fff;
+            border-top: 0.1rem solid #dbdbdb;
+            border-bottom: 0.1rem solid #dbdbdb;
+            margin: 5.2rem 0 4.2rem;
+            font: 1.4rem/4.4rem 'HiraginoSansGB';
+            color: #0d0d0d; 
+        }
+        #title{
+            border-bottom: 0.2rem solid #dbdbdb;
+        }
+        #title img{
+            width: 3rem;
+            margin: 0.7rem 1.3rem 0.7rem 0.2rem;
+        }
+        #money_box span{
+            display: block;
+            width: 4.5rem;
+            color: #808080;
+        }
+        #money_box input{
+            width: 80%;
+            height: 4.4rem;
+            border: none;
+            font: 1.3rem/4.4rem 'HiraginoSansGB';
+        }
+        /*下一步按钮*/
+        #sum_btn{
+            width: 85.3%;
+            display: block;
+            margin: auto;
+            background: #26c08a;
+            border: none;
+            border-radius: 0.6rem;
+            font: 1.5rem/4.5rem 'HiraginoSansGB';
+            color: #fff;
+            text-align: center;
+            letter-spacing: 0.2em;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="..\js\sh_login.js"></script>
+    <script src="../js/sh_shoppingcart_order.js"></script>
+    <script>
+        window.onload = function(){
+            var aInp = document.getElementsByTagName('input');
+
+            inputClean(aInp[0],"请输入充值金额",'text');
+
+            $('#money_box').bind('input propertychange',function(){  //监听密码框
+                var oP = $('input[type="text"]');
+                oP.val(oP.val().replace(/[^0-9-]+/, ''));       //只能输入数字
+            });
+        };
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my_wallet.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2>充值</h2>
+    </header>
+    <section id="main">
+        <div id="payway">
+            <div id="title" class="clearfix">
+                <div class="box">
+                    <img class="fl" src="../img/pay/支付宝.png" alt="">
+                    <span class="fl">支付宝</span>
+                </div>
+            </div>
+            <div id="money_box" class="clearfix">
+                <div class="box">
+                    <span class="fl">金额</span>
+                    <input class="fl" type="text" value="请输入充值金额">
+                </div>
+            </div>
+        </div>
+        <a href="">
+
+        </a>
+        <input id="sum_btn" type="button" value="下一步">
+    </section>
+    <section id="section5">
+        <div class="opacity">
+            <div id="pw_box">
+                <div class="pw_box">
+                    <h4>钱包密码</h4>
+                    <div>
+                        <span id="pw_money">￥60.80</span>
+                    </div>
+                    <div id="pw_list">
+                        <ul class="clearfix">
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                        </ul>
+                        <input id="pw" type="password" maxlength="6">
+                    </div>
+                    <div id="btn_box" class="clearfix">
+                        <input id="cancel_btn" type="button" class="fl" value="取消">
+                        <input id="pay_btn" type="button" class="fr" value="付款">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

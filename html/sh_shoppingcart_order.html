@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_shoppingcart_address.css">
+    <link rel="stylesheet" href="..\css\sh_shoppingcart_order.css">
+    <link rel="stylesheet" href="..\css\sh_pay.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/sh_shoppingcart_order.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_shoppingcart.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">确认下单</h2>
+    </header>
+    <section id="section1" class="top">
+        <div class="box address">
+            <a href="javascipt:;">
+                <div class="use_message">
+                    <span class="use_name">何一言</span>
+                    <span class="use_cellphone">13660324092</span>
+                </div>
+                <div class="use_address_box">
+                    <span class="default">[默认]</span>
+                    <span class="use_address">广州市黄埔区港湾路</span>
+                </div>
+                <img class="more_address" src="../img/右箭头.png" alt="">     
+            </a>
+        </div>
+    </section>
+    <section  id="section2">
+        <div class="box">
+            <h3>购买商品</h3>
+            <div id="product_list">
+                <ul>
+                    <li class="product_list clearfix">
+                        <div class="product_pic fl"></div>
+                        <div class="product_message fl">
+                            <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                            <span class="type">规格：1盒6片</span>
+                            <span class="money">￥25.4</span>
+                            <span class="amount">×2</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="ems" class="clearfix">
+                <span class="title fl">运费：</span>
+                <span id="ems_money" class="fr">￥10</span>
+            </div>
+            <div id="remark" class="clearfix">
+                <span class="title fl">备注：</span>
+                <input id="remark_text" type="text">
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="box">
+            <h3>支付方式</h3>
+            <ul id="pay_list">
+                <li class="pay_box clearfix">
+                    <img class="fl" src="../img/pay/我的钱包.png" alt="">
+                    <span class="fl">我的钱包</span>
+                    <div class="fr">
+                        <input class="btn" type="checkbox" checked="checked">
+                    </div>
+                </li>
+                <li class="pay_box clearfix">
+                    <img class="fl" src="../img/pay/支付宝.png" alt="">
+                    <span class="fl">支付宝</span>
+                    <div class="fr">
+                        <input class="btn" type="checkbox">
+                    </div>
+                </li>
+                <li class="pay_box clearfix">
+                    <img class="fl" src="../img/pay/微信支付.png" alt="">
+                    <span class="fl">微信支付</span>
+                    <div class="fr">
+                        <input class="btn" type="checkbox">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="box clearfix">
+            <span id="text1" class="fl">合计：</span>
+            <span id="sum" class="fl">￥60.80</span>
+            <input id="sum_btn" class="fr" type="button" value="立即支付">
+        </div>
+    </section>
+    <section id="section5">
+        <div class="opacity">
+            <div id="pw_box">
+                <div class="pw_box">
+                    <h4>钱包密码</h4>
+                    <div>
+                        <span id="pw_money">￥60.80</span>
+                    </div>
+                    <div id="pw_list">
+                        <ul class="clearfix">
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                        </ul>
+                        <input id="pw" type="password" maxlength="6">
+                    </div>
+                    <div id="btn_box" class="clearfix">
+                        <input id="cancel_btn" type="button" class="fl" value="取消">
+                        <a href="sh_shoppingcart_pay_success.html">
+                            <input id="pay_btn" type="button" class="fr" value="付款">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

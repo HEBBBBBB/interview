@@ -1,0 +1,230 @@
+html,body{
+    width: 100%;
+    /* height: 100%;
+    overflow: hidden; */
+    background: #f2f2f2;
+}
+.box{
+    width: 94.7%;
+    display: block;
+    margin: 0 auto;
+}
+.underline{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+#section1,#section2,#section3,#section4{
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.top{
+    margin-top: 3.9rem;
+}
+
+/*删除线*/
+.through{
+    text-decoration: line-through;
+}
+
+/*头部状态栏*/
+#header{
+    width: 100%;
+    height: 3.9rem;
+    background-color: #f29004;
+    position: fixed;
+    top: 0;
+    z-index: 2018;
+}
+#rightside{
+    display: block;
+    font: 1.5rem 'STHeitiSC';
+    color: #fff;
+    margin: 0 1.1rem;
+    line-height: 3.9rem;
+    position: absolute;
+    right: 0;
+}
+#rightside_img{
+    margin: 0 1.1rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+}
+#back{
+    width: 1.1rem;
+    height: 1.8rem;
+    margin: 0 1.1rem;
+    margin-top: 1.3rem;
+    position: absolute;
+    left: 0;
+}
+
+h1,h2{
+    width: 12rem;
+    font: 1.8rem 'HiraginoSansGB';
+    letter-spacing: 0.2rem;
+    color: #fff;
+    display: block;
+    position: absolute;
+    margin: auto;  
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 3.9rem;
+}
+
+
+/*输入框基础样式*/
+.login_text{
+    display: block;
+    height: 4.4rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    border:1px solid #dbdbdb;
+    font: 500 1.3rem/4.4rem 'HiraginoSansGB';
+    color: #a0a0a0;
+    letter-spacing: 1.5px;
+}
+.login_text:last-of-type{
+    width: 100%;
+    background: #f29004;
+    color: #ffffff;
+    font:700 1.5rem 'HiraginoSansGB';
+    text-align: center;
+}
+
+
+
+/*底部栏footer样式*/
+#footer{
+    width: 100%;
+    height: 4.9rem;
+    background-color:#ffffff; 
+    border-top: 0.1rem solid #dbdbdb;
+    position: fixed;
+    bottom: 0;
+}
+#mylist{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#mylist li{
+    width: 20%;
+}
+#mylist a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#mylist a img{
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+
+/*滑动按钮.sliding_button*/
+.sliding_button{
+    width: 4.9rem;
+    height: 2.8rem;
+    border-radius: 2.5rem;
+    background: #f2f2f2;
+    border: 1px solid #dfdfdf;
+    position: relative;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s; /* Firefox 4 */
+    -webkit-transition: background-color 0.3s; /* Safari 和 Chrome */
+    -o-transition: background-color 0.3s; /* Opera */
+}
+.sliding_button:checked{
+    background: #f29004;
+    box-shadow:0 1px 10px #a0a0a0 inset;
+}
+.sliding_button::after{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #ffffff;
+    border-radius: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0.05rem;
+    left: 0.05rem;
+    transition: transform 0.3s;
+    -moz-transition: transform 0.3s; /* Firefox 4 */
+    -webkit-transition: transform 0.3s; /* Safari 和 Chrome */
+    -o-transition: transform 0.3s; /* Opera */
+}
+.sliding_button:checked::after{
+    transform: translateX(2.1rem);
+    -webkit-transform: translateX(2.1rem);
+}
+
+/*半透明灰*/
+.opacity{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    filter: alpha(opacity=40);  
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2018; 
+}
+
+/*banner样式*/
+#banner{
+    margin-top: 3.9rem;
+    width: 100%;
+    position: relative;
+}
+#banner_box{
+    width: 100%;
+    /* height: 15rem; */
+}
+#banner_box img{
+    width: 100%;
+    overflow: hidden;
+}
+#banner_list{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -2.7rem;
+    margin-bottom: 0.7rem;
+}
+#banner_list li{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    background: rgba(128,128,128,0.6);
+    margin-right: 0.7rem;
+}
+#banner_list li:first-child{
+    background: #fff;
+}
+
+/*响应式*/
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+    .product_list div:last-child span:first-child{
+        width: 14rem;
+    }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+    .product_list div:last-child span:first-child{
+        width: 14rem;
+    }
+}

@@ -1,0 +1,33 @@
+/*  商品地址样式 */
+.address{
+    position: relative;
+}
+.address span{
+    font: 1.4rem 'HiraginoSansGB';
+}
+.more_address{
+    width: 1rem;
+    position: absolute;
+    margin-top: -1rem;
+    top: 50%;
+    right: 0;
+}
+.use_message{
+    width: 100%;
+    line-height: 4.1rem;
+    color:#333333;
+    text-align: left;
+}
+.use_name{
+    margin-right: 1.5rem;
+}
+.use_address_box{
+    line-height: 2.9rem;
+    margin-bottom: 1.2rem;
+}
+.use_address{
+    color:#333333;
+}
+.default{
+    color:#f29004;
+}

@@ -1,0 +1,113 @@
+
+/*商品详情共用样式*/
+html,body{
+    width: 100%;
+    background: #f2f2f2;
+}
+.box{
+    width: 94.7%;
+    margin: 0 auto;
+}
+/*商品图片section1样式*/
+.section1{
+    border-top: 0.1rem solid #e6e6e6;
+    border-bottom: 0.1rem solid #e6e6e6;
+    background: #ffffff;
+}
+.pic1{
+    width: 100%;
+    position: relative;
+}
+.pic1::before{
+    content:'';
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 50px 100px -50px #cbcbcb inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pic1::after{
+    content:'';
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0px -30px 50px -20px #cbcbcb inset;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.pic1 img{
+    width: 100%;
+}
+#aside{
+    width: 100%;
+    height: 4.4rem;
+    position: absolute;
+    top: 0;
+    z-index: 2018;
+}
+#aside img{
+    width: 2.5rem;
+    margin-top: 1rem;
+}
+#aside a:nth-of-type(3){
+    margin-right: 3rem;
+}
+.text1{
+    margin:1rem auto;
+}
+.text1 span{
+    display: block;
+}
+.text1 span:first-child{
+    margin-bottom: 1rem;
+    font:700 1.5rem 'HiraginoSansGB';
+    color: #141414;
+}
+.text1 span:last-child{
+    font: 1.3rem/2rem 'HiraginoSansGB';
+    color: #595959;
+}
+/*section2*/
+.section2{
+    border-top: 0.1rem solid #e6e6e6;
+    border-bottom: 0.1rem solid #e6e6e6;
+    background: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    /* position: relative; */
+}
+.section2 a{
+    display: block;
+}
+.pic2{
+    width: 19.7%;
+    border: 0.1rem solid #e6e6e6;
+}
+.pic2 img{
+    width: 100%;
+}
+.text2{
+    width: 77.2%;
+}
+.text2 span{
+    font: 1.2rem/2.5rem 'HiraginoSansGB';
+    color: #514f4f;
+}
+.text2 span:first-child{
+    font: 1.4rem/1.4rem 'HiraginoSansGB';
+    color: #1e1d1d;
+    /* margin-top: 0.6rem; */
+}
+.phone{
+    padding-left: 1.7rem;
+    background: url('../img/homepage/life/icon2.png') no-repeat; 
+    background-size: contain; 
+}
+.phone span:first-child{
+    font: 1.2rem/2.5rem 'HiraginoSansGB';
+    color:#45e153;
+}
+.phone span:last-child{
+    color:#45e153;
+}

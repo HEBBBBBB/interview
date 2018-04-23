@@ -1,0 +1,39 @@
+
+#search_input{
+    width: 89.2%;
+    height: 3.8rem;
+    margin-top: 1rem;
+    padding-left: 10.8%;
+    border: 0.1rem solid #d9d9d9;
+    border-radius: 2rem;
+    background: url('../img/homepage/search/search.png') no-repeat #fff;
+    background-position-x: 2rem;
+    background-size: contain;
+    font: 1.4rem/3.8rem 'HiraginoSansGB';
+    color: #8e8e8e;
+    text-indent: 1em;
+}
+#text1{
+    font: 1.4rem/4.6rem 'HiraginoSansGB';
+    text-align: center;
+    color: #8e8e8e;
+}
+#search_list{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap:wrap
+}
+#search_list li{
+    width: 19.85%;
+    border: 0.2rem solid #d9d9d9;
+    border-radius:1.3rem;
+    background: #fff;
+    text-align: center;
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+#search_list li a{
+    display: block;
+    width: 100%;
+    font: 1.4rem/2.6rem 'HiraginoSansGB';
+    color: #8e8e8e;
+}

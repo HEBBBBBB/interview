@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_login.css">    
+    <script src="..\js\sh_login.js"></script>
+    <script>
+        window.onload = function(){
+            var aInp = document.getElementsByTagName('input');
+
+
+            inputClean(aInp[0],"请输入账号/手机号",'text');
+            inputClean(aInp[1],"请输入密码",'password');
+
+        };
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my-vip.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">登陆</h2>
+        <a id="rightside" href="sh_login_register.html" class="fr">注册</a>
+    </header>
+    <section id="main" class="top">
+        <img id="logo" src="../img/login/logo.png" alt="logo">
+        <div id="login">
+            <div class="box">
+                <input class="login_text" type="text" value="请输入账号/手机号">
+                <input class="login_text" type="text" value="请输入密码">
+                <a class="fr" href="sh_login_password_edit.html">忘记密码？</a>
+                <input class="login_text" type="buttom" value="登  陆">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

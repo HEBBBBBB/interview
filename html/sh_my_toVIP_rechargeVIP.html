@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_pay.css">
+    <link rel="stylesheet" href="..\css\sh_my_toVIP_rechargeVIP.css">
+    <title>充值会员</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/sh_shoppingcart_order.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my_toVIP.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2>订单详情</h2>
+    </header>
+    <section id="main">
+        <div id="main_box">
+            <div class="box">
+                    <h3 id="main_title" class="clearfix">
+                        <span class="fl">购买商品</span>
+                        <span class="fr">待付款</span>
+                    </h3>
+                    <div id="vip" class="clearfix">
+                        <div id="pic" class="fl">
+                            <img src="../img/my/钻石.png" alt="">
+                        </div>
+                        <div id="text1" class="fl">
+                            <span>升级成为VIP会员</span>
+                            <span>期限为一年</span>
+                            <span>￥100</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <input id="sum_btn" type="button" value="立即支付">
+    </section>
+    <section id="section5">
+        <div class="opacity">
+            <div id="pw_box">
+                <div class="pw_box">
+                    <h4>钱包密码</h4>
+                    <div>
+                        <span id="pw_money">￥60.80</span>
+                    </div>
+                    <div id="pw_list">
+                        <ul class="clearfix">
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                            <li class="fl"></li>
+                        </ul>
+                        <input id="pw" type="password" maxlength="6">
+                    </div>
+                    <div id="btn_box" class="clearfix">
+                        <input id="cancel_btn" type="button" class="fl" value="取消">
+                        <a href="sh_my_toVIP_rechargeVIP_success.html">
+                            <input id="pay_btn" type="button" class="fr" value="付款">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

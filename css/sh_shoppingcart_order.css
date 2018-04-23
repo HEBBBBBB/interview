@@ -1,0 +1,147 @@
+
+/*公共样式*/
+h3{
+    width: 100%;
+    font: 1.4rem/3.8rem 'HiraginoSansGB';
+    color: #666666;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+/*section2*/
+#section2,#section3{
+    margin-top: 0.9rem;
+    border-top: 0.1rem solid #dbdbdb;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+/* 动态添加商品样式 */
+.product_list{
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+}
+.btn_round{
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #f2f2f2 url();
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 1.5rem;
+}
+.btn_round_click{
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('../img/选中商品.png') no-repeat;
+    background-size: cover;
+    /* border: 0.1rem solid #c9c9c9; */
+    border-radius: 1.5rem;
+}
+.product_pic{
+    width: 6.9rem;
+    height: 6.9rem;
+    border: 1px solid #e6e6e6;
+    margin: 1.2rem 0.8rem 1.2rem 0.2rem;
+    background: url('../img/shoppingcart/商品小图.jpg') no-repeat;
+    background-size: cover; 
+}
+.name{
+    display: block;
+    margin-top: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 1.4rem 'HiraginoSansGB';
+    color: #1a1a1a;
+}
+.type{
+    display: block;
+    margin-top: 1rem;
+    font: 1.2rem 'HiraginoSansGB';
+    color: #757575;
+}
+.money{
+    display: block;
+    margin-top: 1.2rem;
+    font: 700 1.1rem 'HiraginoSansGB';
+    color: #de0000;
+}
+.amount{
+    font: 1.2rem 'HiraginoSansGB';
+    color: #404040;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+}
+.title,#ems_money,#remark_text{
+    font: 1.3rem/5rem 'HiraginoSansGB';
+    color: #666666;
+}
+#ems{
+    width: 100%;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+#remark_text{
+    display: block;
+    width: 70%;
+    height: 4.8rem;
+    border: none;
+    text-indent: 1em;
+}
+/*section3支付方式*/
+#section3{
+    margin-bottom: 10rem;
+}
+.pay_box{
+    position: relative;
+    border-bottom: 0.1rem solid #dbdbdb;
+}
+.pay_box:last-of-type{
+    border-bottom: none;
+}
+.pay_box img{
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0;
+}
+.pay_box span{
+    font: 1.4rem/5rem 'HiraginoSansGB';
+    color: #0d0d0d;
+    text-indent: 1em;
+}
+/*绿色圆形按钮样式*/
+.btn{
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.8rem;
+    right: 0;
+}
+.btn:checked{
+    border: none;
+    background: url("../img/pay/绿色勾.png");
+    background-size: cover;
+}
+
+/*section4 立即支付*/
+#section4{
+    border-top: 0.1rem solid #dbdbdb;
+    position: fixed;
+    bottom: 0;
+}
+#text1{
+    font: 600 1.5rem/5.4rem 'HiraginoSansGB';
+    color: #343434;
+}
+#sum{
+    font: 700 1.5rem/5.4rem 'HiraginoSansGB';
+    color: #e02626;
+}
+#sum_btn{
+    width: 35.8%;
+    margin: 0.8rem 0;
+    border: none;
+    background: #ee4147;
+    border-radius: 0.6rem;
+    font: 700 1.6rem/3.5rem 'HiraginoSansGB';
+    color: #fff;
+    text-align: center;
+}

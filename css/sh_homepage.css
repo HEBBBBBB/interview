@@ -1,0 +1,60 @@
+
+/*header样式*/
+#location{
+    display: block;
+    width: 5.5rem;
+    height: 100%;
+    position: relative;
+}
+#location span{
+    display: block;
+    margin-left: 1.1rem;
+    font: 1.4rem/3.9rem 'HiraginoSansGB';
+    color: #fff;
+} 
+#location img{
+    height: 3.9rem;
+    margin-left: 0.7rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+#rightside_img img{
+    width: 2rem;
+}
+
+/*banner样式*/
+#banner_list li{
+    background: rgba(159,159,160,0.6);
+}
+#banner_list li:first-child{
+    background: #f29604;
+}
+#table table{
+    border: none;
+    /* border-spacing: 0.25rem; */
+    margin-top: 0.7rem;
+    border-collapse: separate;
+}
+#table table img{
+    width: 100%;
+}
+/*main样式*/
+#main{
+    margin-bottom: 10rem;
+}
+#thought img{
+    width: 100%;
+}
+.main_box{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.7rem;
+}
+.main_box img{
+    width: 100%;
+}
+.main_box span{
+    font: 1.4rem/3.4rem 'HiraginoSansGB';
+    color: #0d0d0d;
+}

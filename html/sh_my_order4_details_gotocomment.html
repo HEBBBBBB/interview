@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单详情-已收货</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_shoppingcart_address.css">
+    <link rel="stylesheet" href="..\css\sh_my_order1_details.css">
+    <link rel="stylesheet" href="..\css\sh_my_order_details_return.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            //退款弹窗
+            $('#return_btn').on('click',function(){
+                $('#section4').show();
+            });
+            $('#return_cancel').on('click',function(){
+                $('#section4').hide();
+            });
+
+            //退款原因：下拉框
+            var $reason = $('#reason');
+
+            $reason.attr('onOff',false);
+
+            $reason.click(function(){
+         
+                if( $reason.attr('onOff') === 'false'){
+                    $reason.find('ul').show();
+                    $reason.attr('onOff',true);
+                }else{
+                    $reason.find('ul').hide();
+                    $reason.attr('onOff',false);
+                }
+            });
+
+            $reason.find('ul').on('click','li',function(){
+                var text1 = null;
+
+                text1 = $(this).text();
+                console.log(text1);
+                $('#reason_text').val(text1);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my_order4.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">订单详情</h2>
+    </header>
+    <section id="section1" class="top">
+        <div class="box address">
+            <div class="use_message">
+                <span class="use_name">何一言</span>
+                <span class="use_cellphone">13660324092</span>
+            </div>
+            <div class="use_address_box">
+                <span class="default">[默认]</span>
+                <span class="use_address">广州市黄埔区港湾路</span>
+            </div>    
+        </div>
+    </section>
+    <section  id="section2">
+        <div class="box">
+            <div class="h3 goods_box clearfix">
+                <span class="goods fl">购买商品</span>
+                <span class="state fr">待评价</span>
+                <a class="return" href="javascript:;">
+                    <input id="return_btn" type="button" value="申请退货">
+                </a>
+            </div>
+            <div id="product_list">
+                <ul>
+                    <li class="product_list clearfix">
+                        <div class="product_pic fl"></div>
+                        <div class="product_message fl">
+                            <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                            <span class="type">规格：1盒6片</span>
+                            <span class="money">￥25.4</span>
+                            <span class="amount">×2</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="ems" class="clearfix">
+                <span class="title fl">运费：</span>
+                <span id="ems_money" class="fr">￥10</span>
+            </div>
+            <div id="remark" class="clearfix">
+                <span class="title fl">备注：</span>
+                <input id="remark_text" type="text">
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="box">
+            <div class="h3">
+                <span class="details">订单信息</span>
+            </div>
+            <div class="order_message">
+                <ul>
+                    <li>
+                        <span class="number">订单编号： SKYJ12525441</span>
+                    </li>
+                    <li>
+                        <span class="start_time">创建时间：2017-10-02   12:20</span>
+                    </li>
+                    <li>
+                        <span class="pay_time">创建时间：2017-10-02   12:40</span>
+                    </li>
+                    <li>
+                        <span class="ems_message">物流信息：申通物流&nbsp;&nbsp;5221255142</span>
+                    </li>
+                    <li>
+                        <span class="get_time">收货时间：2017-10-05   12:40</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="opacity">
+            <div id="return_popup">
+                <div id="return_title">
+                    <div class="return_box clearfix">
+                        <h4 class="fl">申请退款</h4>
+                        <input id="return_cancel" class="fr" type="button" value="x">
+                    </div>
+                </div>
+                <div id="return_main" class="return_box">
+                    <div id="return_reason" class="clearfix">
+                        <div class="main_title fl">
+                            <span class="return_text1">退货原因</span>
+                            <span class="red">*</span>
+                            <span class="return_text1">:</span>
+                        </div>
+                        <div id="reason" class="fl">
+                            <input id="reason_text" type="text" value="请选择退货原因" disabled>
+                            <ul>
+                                <li>收到商品破损</li>
+                                <li>商品发错/漏发</li>
+                                <li>收到商品描述不符</li>
+                                <li>商品质量问题</li>
+                            </ul>
+                        </div>
+                        <div class="fr">
+                            <span class="red">*</span>
+                            <span id="tips">选项必填</span>
+                        </div>
+                    </div>
+                    <div id="return_money" class="clearfix">
+                        <div class="main_title fl">
+                            <span class="return_text1">退货金额</span>
+                            <span class="red">*</span>
+                            <span class="return_text1">:</span>
+                        </div>
+                        <div id="money_box" class="fl">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div id="return_illustrate" class="clearfix">
+                        <div class="main_title fl">
+                            <span class="return_text1">退货说明&nbsp;&nbsp;</span>
+                            <span class="return_text1">:</span>
+                        </div>
+                        <div id="illustrate_box" class="fl">
+                            <textarea name="illustrate" id="illustrate"></textarea>
+                        </div>
+                    </div>
+                    <div id="return_pic" class="clearfix">
+                        <div class="main_title fl">
+                            <span class="return_text1">退货证明&nbsp;&nbsp;</span>
+                            <span class="return_text1">:</span>
+                        </div>
+                        <div id="upload_box" class="fl">
+                            <div id="upload_pic">
+                                <span class="return_text1">选择要上传的图片</span>
+                                <input id="upload" type="file">
+                            </div>
+                            <div id="upload_tips">
+                                <span>每张图片大小不超过5M，最多3张， 支持JPG、PNG、BMP格式</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pic_box" class="clearfix">
+                        <div class="pic_box fl">
+                            <img src="../img/shoppingcart/商品小图.jpg" alt="">
+                        </div>
+                        <div class="pic_box fl">
+                            <img src="../img/shoppingcart/商品小图.jpg" alt="">
+                        </div>
+                        <div class="pic_box fl">
+                            <img src="../img/shoppingcart/商品小图.jpg" alt="">
+                        </div>
+                    </div>
+                    <input id="btn1" type="button" value="提交">
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="sh_my_order4_details_comment_star.html">
+        <input id="bottom_btn" type="button" value="去评价">
+    </a>
+</body>
+</html>

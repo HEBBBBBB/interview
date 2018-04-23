@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_shoppingcart.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/sh_shoppingcart_edit.js"></script>
+    <style>
+        /*+-按钮*/
+        .plus-minus{
+            width: 2.4rem;
+            height: 2.4rem;
+            border: 1px solid #dcdcdc;
+            border-radius: 1.2rem;
+            background: #fff;
+            text-align: center;
+            font: 700 1.1rem/2.4rem 'HiraginoSansGB';
+            color: #f29004;
+            position: absolute;
+            bottom: 1.5rem;
+            right: 5rem;
+        }
+        .plus-minus:last-child{
+            right: 0;
+        }
+        .plus-minus-min{
+            color: #dcdcdc;
+        }
+        .product_list div:last-child span:last-of-type{
+            display: block;
+            width: 7.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h2 class="fl">购物车</h2>
+        <a id="rightside" class="fr" href="sh_shoppingcart.html">完成</a>
+    </header>
+    <section id="product_list" class="top box">
+        <ul>    
+            <li>
+                <div class="product_list clearfix">
+                    <div class="btn_round fl"></div>
+                    <div class="product_pic fl"></div>
+                    <div class="product_message fl">
+                        <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                        <span class="type">规格：1盒6片</span>
+                        <span class="money">￥25.4</span>
+                        <span class="amount">2</span>
+                        <input class="plus-minus" type="button" value="-">
+                        <input class="plus-minus" type="button" value="+">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product_list clearfix">
+                    <div class="btn_round fl"></div>
+                    <div class="product_pic fl"></div>
+                    <div class="product_message fl">
+                        <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                        <span class="type">规格：1盒6片</span>
+                        <span class="money">￥29.4</span>
+                        <span class="amount">3</span>
+                        <input class="plus-minus" type="button" value="-">
+                        <input class="plus-minus" type="button" value="+">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product_list clearfix">
+                    <div class="btn_round fl"></div>
+                    <div class="product_pic fl"></div>
+                    <div class="product_message fl">
+                        <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                        <span class="type">规格：1盒6片</span>
+                        <span class="money">￥15.1</span>
+                        <span class="amount">44</span>
+                        <input class="plus-minus" type="button" value="-">
+                        <input class="plus-minus" type="button" value="+">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product_list clearfix">
+                    <div class="btn_round fl"></div>
+                    <div class="product_pic fl"></div>
+                    <div class="product_message fl">
+                        <span class="name">坚果特产山核桃奶油味碧根果500g</span>
+                        <span class="type">规格：1盒6片</span>
+                        <span class="money">￥35.9</span>
+                        <span class="amount">5</span>
+                        <input class="plus-minus" type="button" value="-">
+                        <input class="plus-minus" type="button" value="+">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="section3">
+        <div id="sum" class="box">
+            <div id="sum_ls" class="fl">
+                <div id="btn_all" class="btn_round fl"></div>
+                <span>全选</span>
+            </div>
+            <input id="sum_rs_cancel" class="fr" type="button" value="删除">
+        </div>
+    </section>
+    <footer id="footer">
+        <ul id="mylist">
+            <li class="fl">
+                <a href="sh_homepage.html">
+                    <img src="../img/footer/首页.png" alt="">
+                </a>
+            </li>
+            <li class="fl">
+                <a href="sh_vip.html">
+                    <img src="../img/footer/会员杂锦.png" alt="">
+                </a>
+            </li>
+            <li class="fl">
+                <a href="sh_classification.html">
+                    <img src="../img/footer/分类.png" alt="">
+                </a>
+            </li>
+            <li class="fl">
+                <a href="sh_shoppingcart.html">
+                    <img src="../img/footer/购物车2.png" alt="">
+                </a>
+            </li>
+            <li class="fl">
+                <a href="sh_my-vip.html">
+                    <img src="../img/footer/我的.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收货地址</title>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sh_public.css">
+    <link rel="stylesheet" href="..\css\sh_shoppingcart_address.css">
+    <style>
+        #section2{
+            margin-top: 1rem;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        // $(function(){
+            
+        //     $.ajax({
+        //         type:'post',
+        //         url:'',
+        //         dataType:'json',
+        //         data:{
+        //             use_name：use_name,
+        //             use_cellphone：use_cellphone,
+        //             use_address：use_address
+        //         },
+        //         success:function(data){
+        //             if(data.use_message.length > 0){
+        //                 $.each(data.use_message,function(i,elem){
+        //                     var list_li ='<li>'
+        //                                     +'<div class="use_message"><span class="use_name">'+ elem.use_name +'</span>'
+        //                                     +'<span class="use_cellphone">'+ elem.use_cellphone +'</span></div>'
+        //                                     +'<div class="use_address">'+ elem.use_address.default_address+'</div>'
+        //                                     +'<a class="more_address" href="javascipt:;"><img src="+../img/右箭头.png+"></a>'
+        //                                 +'</li>'
+        //                     $('#section2').find('ul').append(list_li);
+        //                 });   
+        //             }
+        //         }
+        //     });
+        // });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a href="sh_my-vip.html" class="fl">
+            <img id="back" src="../img/login/箭头.png" alt="">
+        </a>
+        <h2 class="fl">收货地址</h2>
+    </header>
+    <section id="section1" class="top">
+        <div class="box address">
+            <a href="sh_shoppingcart_address_edit.html">
+                <div class="use_message">
+                    <span class="use_name">何一言</span>
+                    <span class="use_cellphone">13660324092</span>
+                </div>
+                <div class="use_address_box">
+                    <span class="default">[默认]</span>
+                    <span class="use_address">广州市黄埔区港湾路</span>
+                </div>
+                <img class="more_address" src="../img/右箭头.png" alt="">     
+            </a>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="box">
+            <ul>
+                <li class="address">
+                    <a href="sh_shoppingcart_address_edit.html">
+                        <div class="use_message">
+                            <span class="use_name">何一言</span>
+                            <span class="use_cellphone">13660324092</span>
+                        </div>
+                        <div class="use_address_box">
+                            <span class="use_address">广州市黄埔区港湾路</span>
+                        </div>
+                        <img class="more_address" src="../img/右箭头.png" alt="">     
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
